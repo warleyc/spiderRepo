@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="wMISComponent">
+      <h2 data-cy="wMISComponentDetailsHeading"><span jhiTranslate="spiderApp.wMISComponent.detail.title">WMIS Component</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ wMISComponent.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="spiderApp.wMISComponent.componentName">Component Name</span></dt>
+        <dd>
+          <span>{{ wMISComponent.componentName }}</span>
+        </dd>
+        <dt><span jhiTranslate="spiderApp.wMISComponent.description">Description</span></dt>
+        <dd>
+          <span>{{ wMISComponent.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="spiderApp.wMISComponent.instance">Instance</span></dt>
+        <dd>
+          <div *ngIf="wMISComponent.instance">
+            <a [routerLink]="['/instance', wMISComponent.instance.id, 'view']">{{ wMISComponent.instance.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/wmis-component', wMISComponent.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

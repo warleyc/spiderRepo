@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123221",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "wmis_component",
+  "fields": [
+    {
+      "fieldName": "componentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "WMISComponent",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "instance",
+      "otherEntityRelationshipName": "instance",
+      "relationshipName": "instance",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

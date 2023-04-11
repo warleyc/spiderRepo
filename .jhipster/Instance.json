@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123220",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "instance",
+  "fields": [
+    {
+      "fieldName": "countryName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Instance",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "wMISComponent",
+      "otherEntityRelationshipName": "instance",
+      "relationshipName": "instance",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "application",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "application",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
