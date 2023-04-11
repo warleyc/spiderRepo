@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Instance.
+    -->
+    <changeSet id="20230411123220-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="instance"
+                                 constraintName="fk_instance__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,27 @@
+{
+  "spiderApp": {
+    "instance": {
+      "home": {
+        "title": "Instances",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Instance",
+        "createOrEditLabel": "Create or edit a Instance",
+        "search": "Search for Instance",
+        "notFound": "No Instances found"
+      },
+      "created": "A new Instance is created with identifier {{ param }}",
+      "updated": "A Instance is updated with identifier {{ param }}",
+      "deleted": "A Instance is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Instance {{ id }}?"
+      },
+      "detail": {
+        "title": "Instance"
+      },
+      "id": "ID",
+      "countryName": "Country Name",
+      "instance": "Instance",
+      "application": "Application"
+    }
+  }
+}

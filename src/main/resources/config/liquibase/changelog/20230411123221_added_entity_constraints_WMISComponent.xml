@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity WMISComponent.
+    -->
+    <changeSet id="20230411123221-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="instance_id"
+                                 baseTableName="wmis_component"
+                                 constraintName="fk_wmis_component__instance_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="instance"/>
+    </changeSet>
+</databaseChangeLog>

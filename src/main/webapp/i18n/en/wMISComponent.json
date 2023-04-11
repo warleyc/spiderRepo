@@ -1,0 +1,27 @@
+{
+  "spiderApp": {
+    "wMISComponent": {
+      "home": {
+        "title": "WMIS Components",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new WMIS Component",
+        "createOrEditLabel": "Create or edit a WMIS Component",
+        "search": "Search for WMIS Component",
+        "notFound": "No WMIS Components found"
+      },
+      "created": "A new WMIS Component is created with identifier {{ param }}",
+      "updated": "A WMIS Component is updated with identifier {{ param }}",
+      "deleted": "A WMIS Component is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete WMIS Component {{ id }}?"
+      },
+      "detail": {
+        "title": "WMIS Component"
+      },
+      "id": "ID",
+      "componentName": "Component Name",
+      "description": "Description",
+      "instance": "Instance"
+    }
+  }
+}

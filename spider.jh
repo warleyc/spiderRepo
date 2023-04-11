@@ -1,0 +1,22 @@
+
+entity Application {
+	applicationName String
+}
+
+entity Instance {
+	countryName String
+}
+
+entity WMISComponent {
+	componentName String,
+	description String
+}
+
+relationship OneToMany {
+	Application{application} to Instance
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Instance{instance} to WMISComponent
+}

@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20230411123219",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "application",
+  "fields": [
+    {
+      "fieldName": "applicationName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Application",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "instance",
+      "otherEntityRelationshipName": "application",
+      "relationshipName": "application",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
